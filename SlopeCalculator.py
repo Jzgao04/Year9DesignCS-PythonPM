@@ -2,6 +2,8 @@ import os
 
 print("- Slope Calculator -")
 
+sound? = print("Would you like sound?")
+if sound? in ['yes']
 os.system("say This is the slope calculator")
 #Input
 y2 = int(input("What is Y2?"))
@@ -12,5 +14,6 @@ print("Your first point is:", (x1, y1))
 print("Your second point is:", (x2, y2))
 slope = float(y2 - y1) / (x2 - x1)
 #Process
-os.system(str("say Your Slope is" + slope))
+os.system("say Your Slope is" + slope))
 print("Your Slope is: ", slope)
+
