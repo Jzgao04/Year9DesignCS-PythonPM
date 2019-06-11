@@ -18,3 +18,37 @@ person2.telephone = "4164441111"
 
 print(person1.description())
 print(person2.description())
+
+
+#-------------------------------------
+
+
+class Car:
+	def __init__(self, make, model, year):
+		self.make = make
+		self.model = model
+		self.year = year
+
+	def setCarMake(self):
+		self.make = make
+
+	def setCarModel(self):
+		self.model = model
+	def getCarModel(self):
+		print(self.model)
+
+c2 = Car("Toyota, "Rav4", 2018)
+c2.getCarMake()
+c2.getCarModel()
+
+
+#---------------------------------------
+
+class CSStudent:
+	stream = 'cse'
+	def __init__(self, name, roll):
+		self.name = name
+		self.roll = roll
+
+a = CSStudent("Geek", 1)
+b = CSStudent("Nerd")

@@ -8,13 +8,13 @@ from tkinter import *
 from tkinter import ttk
 
 
-
-class FileGen:
-
-
-	def __init__(self, path):
+class FileGen: #Create Class 
 
 
+	def __init__(self, path): #initialize itself and the parameter "path", constructor in object-oriented programming
+
+
+#Create the folders
 
 		folder("*.py","Python Scripts")
 		folder("*.html","HTML")
@@ -26,7 +26,7 @@ class FileGen:
 		folder("*.pdf","Documents/PDF Files")
 		images=["*.jp*","*.png","*.psd","*.bmp"]
 
-		for img in images: #This little addition just allows the program to be able to encompass more filetypes
+		for img in images: #This addition just allows the program to be able to encompass more filetypes
 			folder(img,"Images") 
 
 
@@ -51,13 +51,13 @@ class FileGen:
 
 
 
-root = tk.Tk()
-root.geometry('300x600')
+root = tk.Tk() #Create an instance of Tk which creates the base window
+root.geometry('300x600') #Define the file window size, so it won't be defined by the widgets
 
-def FileSorter():
+def FileSorter(): #Define the back end as a method
 	print("File Sorter")
 	#pull path 
-	f = FileSorter(path)
+	f = FileSorter(path) #Create an object (variable) and tie it to the method and the parameter path
 
 
 def darkcolors():
